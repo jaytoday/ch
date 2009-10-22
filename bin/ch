@@ -45,6 +45,7 @@ if [ -d $CH_SHEETS ]; then
 else
   git clone $CH_REPO $CH_SHEETS &&
   echo Initialized cheat sheets at $CH_SHEETS
+  ch $1
 fi
 
 
