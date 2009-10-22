@@ -33,11 +33,9 @@ if [ -d $CH_SHEETS ]; then
         ch locate $2 | xargs basename -s '.sheet' | sort
         ;;
       read)
-        echo
         find $CH_SHEETS -name $2.sheet -type f | xargs cat | less 
         ;;
       *)
-        echo
         ch find $1 | head -n 1 | awk "{ print \"$CH_SHEETS/\" \$1 \".sheet\" }" | xargs cat | less
         ;;
     esac
