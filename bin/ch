@@ -11,8 +11,9 @@ if [ -d $CH_SHEETS ]; then
       ;;
     help|-h|--help)
       echo 'usage: ch ch'
-      echo '       ch ch [search|find|list] [sheet]'
+      echo '       ch [search|find|list] [sheet]'
       echo '       ch locate [sheet]'
+      echo '       ch read <sheet>'
       echo '       ch update'
       echo '       ch [-v|--version] '
       ;;
@@ -28,11 +29,15 @@ if [ -d $CH_SHEETS ]; then
       fi
       ;;
     search|find|list)
-      ch locate $2 | xargs basename -s '.sheet'
+      ch locate $2 | xargs basename -s '.sheet' | sort
+      ;;
+    read)
+      echo
+      find $CH_SHEETS -name $2.sheet -type f | xargs cat | less 
       ;;
     *)
       echo
-      ch locate $1 | head -n 1 | xargs cat | less
+      ch find $1 | head -n 1 | awk "{ print \"$CH_SHEETS/\" \$1 \".sheet\" }" | xargs cat | less
       ;;
   esac
 else

@@ -66,6 +66,14 @@ Outputs a list of sheets matching [sheet] or all sheets
     $ ch list
     ... shows everything
     
+## ch read &lt;sheet&gt;
+
+Read the exact &lt;sheet&gt; given. No globbing allowed here!
+This is useful when it is difficult to target the correct sheet
+due to short names. For example 'e' requires that you:
+
+    $ ch read e
+    
 ## ch edit [sheet]
 
 Opens sheets matching [sheet] or all sheets in $EDITOR
