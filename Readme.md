@@ -23,8 +23,12 @@
   
 ## Installation
 
-    $ make install
-    $ make uninstall
+    $ sudo make install
+    $ sudo make uninstall
+    
+Or if you do not wish to clone this repo:
+
+    $ cd /tmp && git clone git://github.com/visionmedia/ch.git && cd ch && sudo make install
     
 ## ch ch
 
