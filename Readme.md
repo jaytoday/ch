@@ -17,8 +17,9 @@
 ## Features
 
   * Very fast
-  * High quality moderated cheat sheets
+  * High quality, well organized, moderated cheat sheets
   * Few dependencies (unless your lame you will have them (sed, git, etc)
+  * Tons of cheat sheets!
   
 ## Installation
 
