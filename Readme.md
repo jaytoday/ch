@@ -2,9 +2,19 @@
 # CH
 
   Bash utility for viewing, managing, and creating cheat sheets for
-  developers and designers via git repositories.
+  developers and designers via git repositories. Cheat sheets are 
+  currently stored on [Github](http://github.com/visionmedia/ch-sheets)
+  fork and contribute!
   
-# Installation
+## Why Another?
+  
+  Cheat was a great idea, however 'ch' aims to increase the quality
+  of cheat sheets, as well as making them easy to find by keeping
+  things nice and organized. View the [Repo](http://github.com/visionmedia/ch-sheets)
+  to see for your self, only quality cheat sheets are allowed, and 
+  are required to be named by topic to increase searchability.
+  
+## Installation
 
     $ make install
     $ make uninstall
@@ -52,6 +62,10 @@ Outputs a list of sheets matching [sheet] or all sheets
 ## ch edit [sheet]
 
 Opens sheets matching [sheet] or all sheets in $EDITOR
+
+## ch update
+
+Updates the cheat sheet repository to grab the latest changes.
     
 ## ch help
 

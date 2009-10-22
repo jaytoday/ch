@@ -2,7 +2,7 @@
 
 VERSION='0.0.1'
 SHEETS="$HOME/.ch-sheets"
-REPO='git://github.com/robin/chitsheet.git'
+REPO='git://github.com/visionmedia/ch-sheets.git'
 
 if [ -d $SHEETS ]; then
   case $1 in
@@ -14,7 +14,12 @@ if [ -d $SHEETS ]; then
       echo '       ch ch [search|find|list] [sheet]'
       echo '       ch edit [sheet]'
       echo '       ch locate [sheet]'
+      echo '       ch update'
       echo '       ch [-v|--version] '
+      ;;
+    update)
+      cd $SHEETS
+      git pull origin master 2> /dev/null
       ;;
     locate)
       if [ $2 ]; then
