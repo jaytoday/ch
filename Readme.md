@@ -14,6 +14,12 @@
   to see for your self, only quality cheat sheets are allowed, and 
   are required to be named by topic to increase searchability.
   
+## Features
+
+  * Very fast
+  * High quality moderated cheat sheets
+  * Few dependencies (unless your lame you will have them (sed, git, etc)
+  
 ## Installation
 
     $ make install
