@@ -12,7 +12,6 @@ if [ -d $CH_SHEETS ]; then
     help|-h|--help)
       echo 'usage: ch ch'
       echo '       ch ch [search|find|list] [sheet]'
-      echo '       ch edit [sheet]'
       echo '       ch locate [sheet]'
       echo '       ch update'
       echo '       ch [-v|--version] '
@@ -30,9 +29,6 @@ if [ -d $CH_SHEETS ]; then
       ;;
     search|find|list)
       ch locate $2 | xargs basename -s '.sheet'
-      ;;
-    edit)
-      ch locate $2 | xargs $EDITOR
       ;;
     *)
       echo
