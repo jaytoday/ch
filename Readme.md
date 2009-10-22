@@ -26,6 +26,10 @@
     $ make install
     $ make uninstall
     
+## ch ch
+
+Output verbose help information for 'ch' :)
+    
 ## ch [sheet]
 
 Outputs contents of the first sheet matching [sheet]
