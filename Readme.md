@@ -94,6 +94,14 @@ Updates the cheat sheet repository to grab the latest changes.
 
   * Outputs the help information
 
+## Viewing Sheet Specifics
+
+Sometimes you want to quickly search for a specific chunk of the cheat sheet
+for example a specific css property, or selector. This can be done easily using **grep**
+
+    $ ch css | grep :empty
+    E:empty                an E element, with no children (including text nodes)
+
 ## License
 
 (The MIT License)
